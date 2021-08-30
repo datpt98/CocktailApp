@@ -1,6 +1,7 @@
 package com.example.cocktailapp.adapters
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -11,19 +12,22 @@ import com.example.cocktailapp.models.CategoryModel
 class CategoryAdapter(private val categories: List<CategoryModel>) :
     RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
 
-    class ViewHolder(view: TextView) : RecyclerView.ViewHolder(view) {
+    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         var categoryTitle: TextView = view.findViewById(R.id.categoryTitle)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.list_item, parent, false)
+    override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
+        val view = LayoutInflater.from(viewGroup.context)
+            .inflate(R.layout.list_item, viewGroup, false)
 
         return ViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.categoryTitle.text = categories[position]
+
+        val data: CategoryModel = categories[position]
+
+        holder.categoryTitle.text = data.strCategory
     }
 
     override fun getItemCount(): Int {
