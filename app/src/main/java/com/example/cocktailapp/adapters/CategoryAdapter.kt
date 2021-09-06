@@ -39,6 +39,7 @@ class CategoryAdapter(
         holder.categoryTitle.text = data.strCategory
         holder.mCategory.setOnClickListener {
             val intent = Intent(mContext, CategoryDetailActivity::class.java)
+            intent.putExtra("mCategory", data.strCategory)
             mContext.startActivity(intent)
         }
     }

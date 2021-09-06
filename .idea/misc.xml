@@ -5,11 +5,15 @@
       <map>
         <entry key="..\:/Users/Daniel  Pham/Downloads/CocktailApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/Daniel  Pham/Downloads/CocktailApp/app/src/main/res/layout/list_item.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Daniel  Pham/Pictures/CocktailApp/app/src/main/res/drawable/ic_back.xml" value="0.1625" />
         <entry key="..\:/Users/Daniel  Pham/Pictures/CocktailApp/app/src/main/res/drawable/img_gradient.xml" value="0.1390625" />
+        <entry key="..\:/Users/Daniel  Pham/Pictures/CocktailApp/app/src/main/res/layout/activity_category.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/Daniel  Pham/Pictures/CocktailApp/app/src/main/res/layout/activity_category_detail.xml" value="0.2" />
+        <entry key="..\:/Users/Daniel  Pham/Pictures/CocktailApp/app/src/main/res/layout/activity_drink.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/Daniel  Pham/Pictures/CocktailApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/Daniel  Pham/Pictures/CocktailApp/app/src/main/res/layout/drink_list_item.xml" value="0.18020833333333333" />
         <entry key="..\:/Users/Daniel  Pham/Pictures/CocktailApp/app/src/main/res/layout/list_item.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Daniel  Pham/Pictures/CocktailApp/app/src/main/res/layout/list_item_drink.xml" value="0.1265625" />
       </map>
     </option>
   </component>
