@@ -1,5 +1,6 @@
 package com.example.cocktailapp.activities
 
+import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -21,10 +22,8 @@ import com.example.cocktailapp.networks.API
 import com.squareup.picasso.Picasso
 import org.json.JSONException
 import org.json.JSONObject
-import org.w3c.dom.Text
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-
 
 class MainActivity : AppCompatActivity() {
     var categoryAdapter: CategoryAdapter? = null
@@ -63,8 +62,9 @@ class MainActivity : AppCompatActivity() {
                             val data = CategoryModel()
                             data.strCategory = temp.getString("strCategory")
                             categoryList.add(data)
-                            showCategories()
-                            categoryAdapter = CategoryAdapter(categoryList)
+                            categoryAdapter = CategoryAdapter(this@MainActivity, categoryList)
+
+
                             mRecycleView!!.adapter = categoryAdapter
                         }
 
@@ -104,15 +104,6 @@ class MainActivity : AppCompatActivity() {
                     TODO("Not yet implemented")
                 }
             })
-    }
-
-
-    private fun getCategories() {
-
-    }
-
-    private fun showCategories() {
-
     }
 
 
